@@ -41,24 +41,13 @@
 
                     <ul>
                         {usersNext.map ((users) =>{
-                            return <li key={users.id}> {`User ${users.name} is ${user.age} years old`} </li>
+                            return <li key={users.id}> {`User ${users.name} is ${users.age} years old`} </li>
                         })}
                     </ul>
                 </>
             )
         }
-
-        ReactDOM.render(<HomePage / >, App);
-    </script>
-</body>
-</html>
-    
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-
-    <script type="text/javascript">
-        const app = document.getElementById('app');
-        ReactDOM.render(<h1>Hello World</h1>, app);
+        ReactDOM.render(<HomePage />, App);
     </script>
 </body>
 </html>
